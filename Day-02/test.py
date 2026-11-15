@@ -17,4 +17,19 @@ b = Book("Allah is watching","Me",806)
 a.display()
 b.display()
 
-    
+
+""" Write a Student class with name and marks, plus a classmethod from_string 
+that builds a Student from "Sara,85". Marks must be an integer."""
+
+class Student:
+      def __init__(self,name,marks):
+            self.name = name
+            self.marks = marks
+
+      @classmethod
+      def from_string(cls,text):
+            name,marks = text.split(",")
+            return cls(name,int(marks))
+
+s = Student.from_string("Sara,85")
+print(s.name, s.marks)
