@@ -147,3 +147,21 @@ Put one of each in a list and loop through it, calling send("Hello") on each.
 Q7. Coding task: Rewrite BankAccount with a private __balance and a @property called balance 
 with a setter that rejects negative values. Create one account, read the balance, set it to 500, then try -5.
 """
+
+class Email :
+    def __init__(self,message):
+          self.message = message
+    def send(self,message):
+        print(message)
+class SMS:
+    def __init__(self,message):
+          self.message = message
+    def send(self,message):
+        print(message) 
+class WhatsApp:
+    def __init__(self,message):
+          self.message = message
+    def send(self,message):
+        print(message)
+        
+W = Whatsapp(s)
